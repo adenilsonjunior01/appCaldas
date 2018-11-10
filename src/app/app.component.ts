@@ -6,6 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { LoginPage } from '../pages/login/login';
+import { HomeCardsPage } from '../pages/home-cards/home-cards';
 
 
 @Component({
@@ -15,7 +16,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // Página que será exibida primeiramente (voltar com LoginPage)
-  rootPage: any = LoginPage;
+  rootPage: any = HomeCardsPage;
 
   pages: Array<{title: string, component: any, icon: string}>;
 

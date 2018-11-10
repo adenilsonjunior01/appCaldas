@@ -11,3 +11,4 @@ import { DescricaoApPage } from './descricao-ap';
   ],
 })
 export class DescricaoApPageModule {}
+

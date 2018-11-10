@@ -10,49 +10,51 @@ import { ApService } from './../pages/services/apart-service';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomeCardsPage } from '../pages/home-cards/home-cards';
-import { DescricaoApPage } from '../pages/descricao-ap/descricao-ap';
 import { LoginPage } from '../pages/login/login';
 import { ApagaimovelPage } from '../pages/apagaimovel/apagaimovel';
 import { AlteradadosPage } from '../pages/alteradados/alteradados';
 import { EditarApPage } from '../pages/editar-ap/editar-ap';
 import { InfoperfilPage } from '../pages/infoperfil/infoperfil';
+import { ApartamentosProvider } from '../providers/apartamentos/apartamentos';
+import { DescricaoApPage } from '../pages/descricao-ap/descricao-ap';
 
 @NgModule({
   declarations: [
     MyApp,
     HomeCardsPage,
     TabsPage,
-    DescricaoApPage,
     LoginPage,
     InfoperfilPage,
     ApagaimovelPage,
     AlteradadosPage,
-    EditarApPage
+    EditarApPage,
+    DescricaoApPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     HttpModule,
-    
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomeCardsPage,
     TabsPage,
-    DescricaoApPage,
     LoginPage,
     InfoperfilPage,
     ApagaimovelPage,
     AlteradadosPage,
-    EditarApPage
+    EditarApPage,
+    DescricaoApPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UsersProvider,
-    ApService
+    ApService,
+    ApartamentosProvider
   ]
 })
 export class AppModule {}

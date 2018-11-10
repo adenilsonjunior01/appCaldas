@@ -49,24 +49,46 @@ ion-menu {
     font-size: 20px !important;
   }
 }
+//********************************
 .card-background-page {
 
-  ion-card {
-    position: relative;
-    text-align: center;
-    height: 200px !important;
+  ion-card img {
+    height: 250px !important;
+    width: 100% !important;
   }
 
   .card-title {
     position: absolute;
-    top: 36%;
-    width: 100%;
-    background: color($colors, dark);
+    top: 1%;
+    width: 50%;
+    background: rgba(52, 58, 64, 0.8);
+    padding-left: 10px;
   }
 
-  .card-title>h5 {
+  .card-bottom-status {
+    position: absolute;
+    top: 89%;
+    width: 25%;
+    background: rgba(255, 235, 59, 0.9);
+    padding: 2px;
+    left: 2px;
+  }
+  .card-bottom-status span {
+    text-transform: uppercase;
+    color: #212121;
+    letter-spacing: 1px;
+  }
+  .card-bottom-left {
+    position: absolute;
+    top: 88%;
+    left: 31%;
+    width: 68%;
+    background: rgba(52, 58, 64, 0.8);
+    padding: 8px 0px;
+  }
+  .card-title > h5 {
     font-size:  1.25em;
-    color: color($colors, primary-color-light);
+    color: #FFFFFF;
     font-weight: bold;
     letter-spacing: 1px;
   }
